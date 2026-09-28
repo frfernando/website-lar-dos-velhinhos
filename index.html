@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lar dos Velhinhos de Regente Feijó — Acolhendo com Dignidade desde 1971</title>
+    <meta name="description"
+        content="Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó (SSVP). ILPI filantrópica dedicada ao acolhimento integral de 20 idosos desde 1971. Saiba como doar e ser voluntário." />
+
+    <!-- Google Fonts: Inter / Plus Jakarta Sans para leitura clara e acessível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUI 4 + Tailwind CSS CDN (Padrão Sanbernarda Camadas 1 & 2) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        lar: {
+                            green: '#14532d',     /* Verde vicentino profundo */
+                            greenLight: '#166534',
+                            amber: '#d97706',     /* Âmbar de acolhimento e destaque */
+                            amberDark: '#b45309',
+                            warm: '#fbfbf8',      /* Fundo suave quente */
+                            surface: '#ffffff',
+                            ink: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* WCAG 2.2 AA: Tipografia base confortável para leitura (18px) */
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fbfbf8;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        /* Skip link acessível */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: #14532d;
+            color: #ffffff;
+            padding: 0.75rem 1.25rem;
+            z-index: 9999;
+            font-weight: 700;
+            border-radius: 0 0 0.5rem 0.5rem;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Foco acessível WCAG */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #d97706;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+
+    <!-- Acessibilidade: Skip Link para leitores de tela e navegação por teclado -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Topbar Informativa (Horário e Telefone Oficial) -->
+    <div class="bg-lar-green text-white text-sm py-2 px-4 border-b border-green-900/30">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <span class="inline-flex items-center gap-1.5">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Atendimento adm: Seg a Sex, 8h às 16h
+                </span>
+                <span class="hidden md:inline text-green-300">|</span>
+                <span class="hidden md:inline-flex items-center gap-1.5">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Regente Feijó - SP
+                </span>
+            </div>
+            <div class="flex items-center gap-3 text-xs sm:text-sm">
+                <a href="tel:1832791631" class="hover:underline flex items-center gap-1 font-medium">
+                    <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    (18) 3279-1631
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navbar de Alta Conversão -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-200">
+        <div class="navbar max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="navbar-start flex items-center gap-3">
+                <!-- Menu Mobile (Dropdown DaisyUI) -->
+                <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle" aria-label="Abrir menu de navegação">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-md dropdown-content mt-3 z-50 p-3 shadow-xl bg-white rounded-box w-64 border border-gray-100 font-medium">
+                        <li><a href="index.html" class="active font-bold text-lar-green">Início</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                        <li><a href="doar.html" class="text-amber-700 font-bold">Fazer Doação (PIX)</a></li>
+                        <li><a href="transparencia.html">Transparência</a></li>
+                        <li><a href="contato.html">Visitas & Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Marca / Nome Institucional -->
+                <a href="index.html" class="flex flex-col text-left group">
+                    <span
+                        class="font-extrabold text-xl sm:text-2xl tracking-tight text-lar-green group-hover:text-green-800 transition-colors">
+                        Lar dos Velhinhos
+                    </span>
+                    <span class="text-xs text-gray-500 font-medium -mt-1 hidden sm:block">
+                        Nossa Senhora Aparecida • Regente Feijó (SSVP)
+                    </span>
+                </a>
+            </div>
+
+            <!-- Links de Navegação Desktop -->
+            <nav class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-1 font-semibold text-gray-700 text-sm">
+                    <li><a href="index.html" class="bg-gray-100 text-lar-green">Início</a></li>
+                    <li><a href="quem-somos.html" class="hover:text-lar-green">Quem Somos</a></li>
+                    <li><a href="como-ajudar.html" class="hover:text-lar-green">Como Ajudar</a></li>
+                    <li><a href="transparencia.html" class="hover:text-lar-green">Transparência</a></li>
+                    <li><a href="contato.html" class="hover:text-lar-green">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA Primário Fixo no Topo -->
+            <div class="navbar-end flex items-center gap-2">
+                <a href="doar.html"
+                    class="btn btn-warning bg-amber-600 hover:bg-amber-700 text-white font-bold border-none shadow-md hover:shadow-lg transition-all px-5 text-sm sm:text-base">
+                    <svg class="w-5 h-5 mr-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    Doar Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="conteudo-principal" class="flex-grow">
+
+        <!-- 1. HERO SECTION INSTITUCIONAL DE ALTO IMPACTO -->
+        <section
+            class="relative bg-gradient-to-b from-green-950 via-green-900 to-green-950 text-white py-16 sm:py-24 px-4 sm:px-6 overflow-hidden">
+            <!-- Elemento de Fundo Decorativo Sutil -->
+            <div
+                class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                    <div class="lg:col-span-7 text-center lg:text-left">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30 text-xs sm:text-sm font-semibold mb-6">
+                            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                            Desde 1971 acolhendo com amor vicentino
+                        </div>
+
+                        <h1
+                            class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
+                            Acolhendo idosos com dignidade e carinho em Regente Feijó
+                        </h1>
+
+                        <p class="text-lg sm:text-xl text-green-100/90 max-w-2xl mb-8 leading-relaxed">
+                            Instituição filantrópica de longa permanência mantida com amor comunitário e apoio da
+                            Sociedade de São Vicente de Paulo. Oferecemos moradia, saúde integral e qualidade de vida
+                            para 20 idosos.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="doar.html"
+                                class="btn btn-warning bg-amber-500 hover:bg-amber-600 text-slate-900 font-extrabold text-base border-none px-8 shadow-xl min-h-[48px]">
+                                Fazer Doação via PIX
+                            </a>
+                            <a href="como-ajudar.html"
+                                class="btn btn-outline text-white hover:bg-white/10 hover:border-white border-white/40 text-base font-semibold px-6 min-h-[48px]">
+                                Como Ajudar o Lar
+                            </a>
+                        </div>
+
+                        <p class="text-xs text-green-200/70 mt-4">
+                            Prestação de contas auditável • CNPJ 46.431.656/0001-60
+                        </p>
+                    </div>
+
+                    <!-- Card Destaque / Chamada PIX Rápida no Hero -->
+                    <div class="lg:col-span-5">
+                        <div
+                            class="card bg-white text-gray-800 shadow-2xl rounded-2xl p-6 sm:p-8 border border-gray-100">
+                            <div class="flex items-center gap-3 border-b border-gray-100 pb-4 mb-5">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700 shrink-0">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="text-lg font-bold text-lar-green">Doação Instantânea</h2>
+                                    <p class="text-xs text-gray-500">Sua contribuição mantém os cuidados diários</p>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <p class="text-sm text-gray-600">
+                                    Você pode apoiar a alimentação, fraldas geriátricas e assistência médica com
+                                    qualquer valor via PIX.
+                                </p>
+
+                                <!-- Box Chave PIX -->
+                                <div
+                                    class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-4 text-center">
+                                    <span
+                                        class="text-xs uppercase tracking-wider font-bold text-gray-500 block mb-1">Chave
+                                        PIX (CNPJ do Lar)</span>
+                                    <div
+                                        class="font-mono font-extrabold text-base sm:text-lg text-lar-green select-all py-1">
+                                        46.431.656/0001-60
+                                    </div>
+                                    <span class="text-xs text-gray-500 block mt-1">
+                                        Favorecido: Lar dos Velhinhos N. S. Aparecida
+                                    </span>
+                                </div>
+
+                                <div class="pt-2 flex flex-col gap-2">
+                                    <a href="doar.html"
+                                        class="btn btn-neutral bg-lar-green hover:bg-green-800 text-white font-bold w-full">
+                                        Ver Opções e QR Code
+                                    </a>
+                                    <a href="https://wa.me/5518996561166?text=Ol%C3%A1,%20gostaria%20de%20ajudar%20o%20Lar%20dos%20Velhinhos!"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="btn btn-ghost btn-sm text-lar-green hover:bg-green-50 font-semibold w-full">
+                                        Tirar dúvidas no WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. BARRA DE IMPACTO COM FATOS REAIS (Sem dados inventados) -->
+        <section class="bg-white border-b border-gray-200 py-10 px-4 sm:px-6 shadow-sm"
+            aria-label="Estatísticas e fatos institucionais reais">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+                    <div class="p-4 rounded-xl bg-green-50/60 border border-green-100">
+                        <span class="block text-3xl sm:text-4xl font-extrabold text-lar-green mb-1">1971</span>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700">Ano de Fundação</p>
+                        <p class="text-xs text-gray-500 mt-0.5">Mais de 50 anos de história</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                        <span class="block text-3xl sm:text-4xl font-extrabold text-amber-700 mb-1">20</span>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700">Idosos Acolhidos</p>
+                        <p class="text-xs text-gray-500 mt-0.5">Acolhimento contínuo 24h</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-green-50/60 border border-green-100">
+                        <span class="block text-3xl sm:text-4xl font-extrabold text-lar-green mb-1">SSVP</span>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700">Tradição Vicentina</p>
+                        <p class="text-xs text-gray-500 mt-0.5">Sociedade de São Vicente</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                        <span class="block text-3xl sm:text-4xl font-extrabold text-amber-700 mb-1">100%</span>
+                        <p class="text-xs sm:text-sm font-semibold text-gray-700">Filantrópico</p>
+                        <p class="text-xs text-gray-500 mt-0.5">Sem fins lucrativos</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PILARES: COMO VOCÊ PODE AJUDAR (HUB DE CONVERSÃO) -->
+        <section class="py-16 sm:py-20 px-4 sm:px-6 bg-lar-warm">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <div class="badge badge-warning bg-amber-100 text-amber-800 font-bold mb-3 border-none">
+                        Solidariedade em Ação</div>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
+                        Três formas simples de fazer a diferença hoje
+                    </h2>
+                    <p class="text-base text-gray-600">
+                        O Lar dos Velhinhos depende do apoio constante da comunidade de Regente Feijó e região para
+                        oferecer carinho, alimentação e cuidados especializados aos nossos idosos.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Card 1: Doação Financeira / PIX -->
+                    <div
+                        class="card bg-white shadow-md hover:shadow-xl transition-shadow rounded-2xl border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div class="p-6 sm:p-8">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-green-100 text-lar-green flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Doação Financeira (PIX)</h3>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                                Contribuição pontual ou mensal. Qualquer valor é vital para o custeio de alimentação
+                                equilibrada, remédios, contas de consumo e equipe de cuidadores.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-green-600 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Chave PIX direta sem intermediários
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-green-600 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Recibo oficial para sua prestação
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50 border-t border-gray-100">
+                            <a href="doar.html"
+                                class="btn btn-neutral bg-lar-green hover:bg-green-800 text-white w-full font-bold">
+                                Doar via PIX Agora
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Doação de Alimentos e Fraldas -->
+                    <div
+                        class="card bg-white shadow-md hover:shadow-xl transition-shadow rounded-2xl border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div class="p-6 sm:p-8">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Itens de Necessidade</h3>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                                Recebemos doações materiais diretamente na sede do Lar: fraldas geriátricas (G e GG),
+                                leite, produtos de limpeza e itens de higiene pessoal.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-amber-600 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Fraldas geriátricas tamanhos G e GG
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-amber-600 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Entrega fácil na secretaria
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50 border-t border-gray-100">
+                            <a href="como-ajudar.html#necessidades"
+                                class="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-100 w-full font-bold">
+                                Ver Lista de Itens
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Nota Fiscal Paulista e Voluntariado -->
+                    <div
+                        class="card bg-white shadow-md hover:shadow-xl transition-shadow rounded-2xl border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div class="p-6 sm:p-8">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-800 flex items-center justify-center mb-6">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Nota Fiscal Paulista</h3>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                                Você pode doar seus cupons fiscais sem CPF ou cadastrar a doação automática no app da
+                                Fazenda SP. É gratuito e gera recursos fundamentais para nossa obra.
+                            </p>
+                            <ul class="text-xs text-gray-500 space-y-2 mb-6">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Não custa nada para o cidadão
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Passo a passo rápido e seguro
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50 border-t border-gray-100">
+                            <a href="como-ajudar.html#nfp"
+                                class="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-100 w-full font-bold">
+                                Como Destinar sua Nota
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. QUEM SOMOS: MISSÃO E TRADIÇÃO VICENTINA -->
+        <section class="py-16 sm:py-20 px-4 sm:px-6 bg-white border-t border-gray-200">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                    <div class="lg:col-span-6 space-y-6">
+                        <div
+                            class="badge badge-outline text-lar-green border-lar-green font-bold text-xs uppercase tracking-wider">
+                            Nossa Identidade Vicentina
+                        </div>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                            Mais de meio século dedicado a quem construiu nossa terra
+                        </h2>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            O <strong class="text-gray-900">Lar dos Velhinhos Nossa Senhora Aparecida de Regente
+                                Feijó</strong> foi fundado em 1971 pela Sociedade de São Vicente de Paulo (SSVP).
+                            Trata-se de uma Instituição de Longa Permanência para Idosos (ILPI) sem fins lucrativos,
+                            cuja missão é promover a dignidade humana na terceira idade.
+                        </p>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Oferecemos acolhimento integral: alimentação saudável supervisionada, cuidados de
+                            enfermagem, apoio social, momentos de convivência comunitária e assistência espiritual com
+                            respeito a todos.
+                        </p>
+
+                        <div class="pt-2">
+                            <a href="quem-somos.html"
+                                class="inline-flex items-center gap-2 font-bold text-lar-green hover:text-green-800 transition-colors">
+                                Conheça nossa diretoria e história completa
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Destaque de Missão, Visão e Valores Reais -->
+                    <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-6 rounded-2xl bg-lar-warm border border-gray-200">
+                            <h3 class="font-extrabold text-lg text-lar-green mb-2">Missão</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">
+                                Acolher idosos em situação de vulnerabilidade com dignidade, amor e assistência integral
+                                material e humana.
+                            </p>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-lar-warm border border-gray-200">
+                            <h3 class="font-extrabold text-lg text-amber-700 mb-2">Visão</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">
+                                Ser referência em acolhimento gerontológico humanizado, transparência pública e
+                                integração comunitária.
+                            </p>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-lar-warm border border-gray-200 sm:col-span-2">
+                            <h3 class="font-extrabold text-lg text-gray-900 mb-2">Valores Vicentinos</h3>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                                Caridade cristã vicentina, respeito inegociável à dignidade da pessoa idosa,
+                                solidariedade comunitária, transparência e responsabilidade no uso de cada recurso
+                                doado.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TRANSPARÊNCIA: COMPROMISSO COM A COMUNIDADE -->
+        <section class="py-14 px-4 sm:px-6 bg-green-950 text-white">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="max-w-2xl text-center md:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        Prestação de Contas Pública
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">
+                        Transparência auditável em cada centavo recebido
+                    </h2>
+                    <p class="text-sm sm:text-base text-green-100/80">
+                        Disponibilizamos balancetes, relatórios de atividades, planos de trabalho e parcerias com o
+                        poder público para consulta livre de qualquer cidadão.
+                    </p>
+                </div>
+                <div class="shrink-0">
+                    <a href="transparencia.html"
+                        class="btn btn-warning bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold border-none px-6">
+                        Acessar Portal de Transparência
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. LOCALIZAÇÃO E VISITAS -->
+        <section class="py-16 sm:py-20 px-4 sm:px-6 bg-white border-t border-gray-200">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-amber-600 uppercase tracking-wider block mb-1">Venha nos
+                                Conhecer</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+                                Sede do Lar dos Velhinhos
+                            </h2>
+                        </div>
+
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-green-100 text-lar-green flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block font-bold">Endereço</strong>
+                                    Rua José Gomes, 858 – Jardim Remanso<br />
+                                    Regente Feijó - SP • CEP: 19570-000
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-green-100 text-lar-green flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block font-bold">Telefone e WhatsApp</strong>
+                                    (18) 3279-1631 (Telefone fixo da sede)<br />
+                                    (18) 99656-1166 (WhatsApp institucional)
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-green-100 text-lar-green flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong class="text-gray-900 block font-bold">E-mail Oficial</strong>
+                                    aidosos@hotmail.com
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="contato.html"
+                                class="btn btn-outline border-lar-green text-lar-green hover:bg-lar-green hover:text-white font-bold w-full sm:w-auto">
+                                Ver Informações de Visitas e Contato
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mapa / Facade de Localização -->
+                    <div class="lg:col-span-7">
+                        <div
+                            class="card bg-gray-100 border border-gray-200 rounded-2xl overflow-hidden shadow-inner h-80 flex flex-col items-center justify-center p-6 text-center">
+                            <div
+                                class="w-12 h-12 rounded-full bg-lar-green text-white flex items-center justify-center mb-3">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-lg mb-1">Rua José Gomes, 858 – Jardim Remanso</h3>
+                            <p class="text-sm text-gray-500 mb-4 max-w-md">
+                                Localizado próximo ao centro de Regente Feijó (SP). Visitas familiares e comunitárias
+                                com agendamento prévio.
+                            </p>
+                            <a href="https://maps.google.com/?q=Rua+Jose+Gomes+858+Regente+Feijo+SP" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-sm btn-neutral bg-lar-green text-white">
+                                Abrir no Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Institucional Completo -->
+    <footer class="bg-gray-900 text-gray-300 border-t border-gray-800 pt-14 pb-8 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-gray-800">
+
+            <!-- Coluna 1: Dados Institucionais -->
+            <div class="md:col-span-5 space-y-4">
+                <span class="text-xl font-extrabold text-white block">
+                    Lar dos Velhinhos
+                </span>
+                <p class="text-xs text-gray-400 leading-relaxed max-w-sm">
+                    Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó.<br />
+                    Entidade filantrópica vinculada à Sociedade de São Vicente de Paulo (Conselho Central de Presidente
+                    Prudente).
+                </p>
+                <div class="text-xs text-gray-400 space-y-1">
+                    <p><strong class="text-gray-300">CNPJ:</strong> 46.431.656/0001-60</p>
+                    <p><strong class="text-gray-300">Endereço:</strong> Rua José Gomes, 858 – Jd. Remanso, Regente Feijó
+                        - SP</p>
+                    <p><strong class="text-gray-300">CEP:</strong> 19570-000</p>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Navegação Rápida -->
+            <div class="md:col-span-3 space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Navegação</h4>
+                <ul class="text-xs space-y-2 text-gray-400 font-medium">
+                    <li><a href="index.html" class="hover:text-amber-400 transition-colors">Início</a></li>
+                    <li><a href="quem-somos.html" class="hover:text-amber-400 transition-colors">Quem Somos &
+                            História</a></li>
+                    <li><a href="como-ajudar.html" class="hover:text-amber-400 transition-colors">Como Ajudar</a></li>
+                    <li><a href="doar.html" class="hover:text-amber-400 transition-colors">Doação Rápida (PIX)</a></li>
+                    <li><a href="transparencia.html" class="hover:text-amber-400 transition-colors">Portal de
+                            Transparência</a></li>
+                    <li><a href="contato.html" class="hover:text-amber-400 transition-colors">Visitas & Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Redes e Atendimento -->
+            <div class="md:col-span-4 space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Atendimento & Redes</h4>
+                <p class="text-xs text-gray-400">
+                    Segunda a Sexta-feira: 08h00 às 16h00 (Secretaria)
+                </p>
+                <div class="text-xs text-gray-400 space-y-1">
+                    <p>Telefone: <a href="tel:1832791631" class="text-amber-400 hover:underline">(18) 3279-1631</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/5518996561166" target="_blank" rel="noopener noreferrer"
+                            class="text-amber-400 hover:underline">(18) 99656-1166</a></p>
+                    <p>E-mail: <a href="mailto:aidosos@hotmail.com"
+                            class="text-amber-400 hover:underline">aidosos@hotmail.com</a></p>
+                </div>
+                <div class="pt-2 flex gap-3 text-xs">
+                    <a href="https://facebook.com/lardosvelhinhosregente" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-white transition-colors underline">
+                        Facebook Oficial
+                    </a>
+                    <span class="text-gray-600">•</span>
+                    <a href="https://instagram.com/lardosvelhinhosrf" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-400 hover:text-white transition-colors underline">
+                        Instagram @lardosvelhinhosrf
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-6xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+            <p>© 1971–2026 Lar dos Velhinhos de Regente Feijó. Todos os direitos reservados.</p>
+            <sanbernarda-badge data-source="lar-dos-velhinhos"></sanbernarda-badge>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Mobile para Conversão Rápida de Doação -->
+    <div
+        class="sm:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-white/95 backdrop-blur border-t border-gray-200 shadow-2xl flex gap-2">
+        <a href="doar.html"
+            class="btn btn-warning bg-amber-500 hover:bg-amber-600 text-slate-900 font-extrabold flex-1 text-sm shadow">
+            Doar Agora (PIX)
+        </a>
+        <a href="https://wa.me/5518996561166?text=Ol%C3%A1,%20gostaria%20de%20ajudar%20o%20Lar%20dos%20Velhinhos!"
+            target="_blank" rel="noopener noreferrer" class="btn btn-outline border-green-700 text-green-800 px-3"
+            aria-label="Falar no WhatsApp">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- SanBernarda Universal Attribution Widget -->
+    <script src="https://sanbernarda.com/widgets/sanbernarda-badge.js" async defer></script>
+</body>
+
+</html>

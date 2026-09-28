@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quem Somos — Lar dos Velhinhos de Regente Feijó</title>
+    <meta name="description"
+        content="Conheça a história, missão e tradição vicentina do Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó, acolhendo idosos com dignidade desde 1971." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        lar: {
+                            green: '#14532d',
+                            greenLight: '#166534',
+                            amber: '#d97706',
+                            amberDark: '#b45309',
+                            warm: '#fbfbf8',
+                            surface: '#ffffff',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fbfbf8;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: #14532d;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            z-index: 9999;
+            font-weight: 700;
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #d97706;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-200">
+        <div class="navbar max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="navbar-start flex items-center gap-3">
+                <a href="index.html" class="flex flex-col text-left group">
+                    <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-lar-green">Lar dos
+                        Velhinhos</span>
+                    <span class="text-xs text-gray-500 font-medium -mt-1 hidden sm:block">Regente Feijó (SSVP)</span>
+                </a>
+            </div>
+
+            <nav class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-1 font-semibold text-gray-700 text-sm">
+                    <li><a href="index.html" class="hover:text-lar-green">Início</a></li>
+                    <li><a href="quem-somos.html" class="bg-gray-100 text-lar-green">Quem Somos</a></li>
+                    <li><a href="como-ajudar.html" class="hover:text-lar-green">Como Ajudar</a></li>
+                    <li><a href="transparencia.html" class="hover:text-lar-green">Transparência</a></li>
+                    <li><a href="contato.html" class="hover:text-lar-green">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-end flex items-center gap-2">
+                <a href="doar.html"
+                    class="btn btn-warning bg-amber-600 hover:bg-amber-700 text-white font-bold border-none text-sm sm:text-base">
+                    Doar via PIX
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="flex-grow py-12 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+
+            <div class="text-center mb-12">
+                <div
+                    class="badge badge-outline text-lar-green border-lar-green font-bold text-xs uppercase tracking-wider mb-3">
+                    História & Princípios
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+                    Quem Somos
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                    Uma trajetória de mais de meio século dedicada à caridade cristã, ao respeito e ao acolhimento com
+                    dignidade da pessoa idosa.
+                </p>
+            </div>
+
+            <!-- História e Origem Vicentina -->
+            <section
+                class="bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-md mb-10 space-y-6 text-sm sm:text-base text-gray-700 leading-relaxed">
+                <h2 class="text-2xl font-extrabold text-lar-green">
+                    Nossa Origem: Desde 1971 em Regente Feijó
+                </h2>
+                <p>
+                    O <strong>Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó</strong> é uma Instituição de
+                    Longa Permanência para Idosos (ILPI) de caráter filantrópico e sem fins lucrativos, fundada em
+                    <strong>1971</strong>.
+                </p>
+                <p>
+                    A entidade integra a tradicional rede de assistência da <strong>Sociedade de São Vicente de Paulo
+                        (SSVP)</strong>, vinculada ao Conselho Central de Presidente Prudente. Inspirados pelo carisma
+                    de São Vicente de Paulo e do Beato Antônio Frederico Ozanam, dedicamos nossas atividades a servir
+                    aos mais vulneráveis com amor fraterno e respeito incondicional.
+                </p>
+                <p>
+                    Atualmente acolhemos <strong>20 idosos</strong>, fornecendo moradia digna, alimentação planejada por
+                    nutricionista, enfermagem, higienização cuidadosa, acompanhamento social e convivência diária para
+                    promover o envelhecimento ativo e saudável.
+                </p>
+            </section>
+
+            <!-- MVV -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-lar-green mb-2">Missão</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">
+                        Acolher e assistir integralmente pessoas idosas em situação de vulnerabilidade, assegurando-lhes
+                        bem-estar físico, psicológico, social e espiritual.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-amber-700 mb-2">Visão</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">
+                        Consolidar-se como instituição modelo de acolhimento geriátrico e transparência pública em
+                        Regente Feijó e em todo o Oeste Paulista.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Valores</h3>
+                    <p class="text-xs sm:text-sm text-gray-600">
+                        Caridade vicentina, dignidade humana, integridade ética, transparência contábil e solidariedade
+                        fraterna com toda a comunidade.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chamada para Ação -->
+            <div class="bg-green-900 text-white rounded-2xl p-8 text-center space-y-4 shadow-xl">
+                <h3 class="text-xl sm:text-2xl font-extrabold">Participe da nossa história</h3>
+                <p class="text-sm text-green-100 max-w-xl mx-auto">
+                    O Lar existe e continua acolhendo nossos idosos graças à generosidade de doadores, empresas
+                    parceiras e voluntários de toda a região.
+                </p>
+                <div class="pt-2 flex flex-wrap justify-center gap-3">
+                    <a href="doar.html"
+                        class="btn btn-warning bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold border-none">
+                        Doar via PIX
+                    </a>
+                    <a href="contato.html" class="btn btn-outline text-white hover:bg-white/10 border-white/40">
+                        Agendar uma Visita
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-xs">
+        <p class="font-bold text-white mb-1">Lar dos Velhinhos Nossa Senhora Aparecida • Regente Feijó (SP)</p>
+        <p>CNPJ: 46.431.656/0001-60 • © 1971–2026. Acolhendo com dignidade.</p>
+        <div class="pt-2 flex justify-center"><sanbernarda-badge data-source="lar-dos-velhinhos"></sanbernarda-badge></div>
+</footer>
+    <!-- SanBernarda Universal Attribution Widget -->
+    <script src="https://sanbernarda.com/widgets/sanbernarda-badge.js" async defer></script>
+</body>
+
+</html>

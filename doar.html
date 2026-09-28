@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazer Doação — Lar dos Velhinhos de Regente Feijó (PIX)</title>
+    <meta name="description"
+        content="Doe diretamente para o Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó via PIX. Apoie a alimentação, saúde e dignidade de 20 idosos acolhidos." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUI 4 + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        lar: {
+                            green: '#14532d',
+                            greenLight: '#166534',
+                            amber: '#d97706',
+                            amberDark: '#b45309',
+                            warm: '#fbfbf8',
+                            surface: '#ffffff',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fbfbf8;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: #14532d;
+            color: #ffffff;
+            padding: 0.75rem 1.25rem;
+            z-index: 9999;
+            font-weight: 700;
+            border-radius: 0 0 0.5rem 0.5rem;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #d97706;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Header Simplificado e Focado na Conversão (ADR-004 e ADR-007) -->
+    <header class="bg-white border-b border-gray-200 py-4 px-4 sm:px-6 sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-lar-green font-extrabold text-lg sm:text-xl">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                <span>Lar dos Velhinhos</span>
+            </a>
+            <a href="index.html" class="text-xs sm:text-sm font-semibold text-gray-500 hover:text-gray-900">
+                Voltar para a Página Inicial
+            </a>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="flex-grow py-10 sm:py-16 px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- Cabeçalho de Doação -->
+            <div class="text-center mb-10">
+                <div
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3">
+                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Doação Direta e Transparente
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
+                    Sua generosidade transforma vidas
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto">
+                    Cada doação é integralmente revertida em alimentação balanceada, medicamentos, fraldas geriátricas e
+                    carinho para os 20 idosos acolhidos em nossa sede.
+                </p>
+            </div>
+
+            <!-- Card Central do PIX -->
+            <div class="card bg-white shadow-xl rounded-2xl border border-gray-200 overflow-hidden mb-12">
+                <div class="bg-lar-green text-white p-6 sm:p-8 text-center">
+                    <span class="text-xs uppercase tracking-wider font-bold text-green-200 block mb-1">
+                        Chave Oficial de Doação
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold">
+                        Doar com Chave PIX (CNPJ)
+                    </h2>
+                    <p class="text-xs sm:text-sm text-green-100/80 mt-1">
+                        Transfira direto pelo aplicativo de qualquer banco
+                    </p>
+                </div>
+
+                <div class="p-6 sm:p-10 space-y-6">
+
+                    <!-- Box de Cópia da Chave -->
+                    <div class="bg-amber-50/50 border-2 border-dashed border-amber-300 rounded-2xl p-6 text-center">
+                        <label for="pix-key"
+                            class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">
+                            Chave PIX (CNPJ da Entidade)
+                        </label>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                            <input id="pix-key" type="text" readonly value="46.431.656/0001-60"
+                                class="font-mono text-xl sm:text-2xl font-black text-lar-green bg-white px-4 py-2 rounded-lg border border-gray-200 text-center w-full max-w-sm select-all focus:outline-none focus:ring-2 focus:ring-amber-500" />
+
+                            <button id="copy-btn" onclick="copyPixKey()"
+                                class="btn btn-warning bg-amber-500 hover:bg-amber-600 text-slate-900 font-extrabold px-6 min-h-[44px] w-full sm:w-auto">
+                                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                                </svg>
+                                Copiar Chave
+                            </button>
+                        </div>
+
+                        <div id="copy-feedback" class="text-xs font-bold text-green-700 mt-2 hidden" role="status">
+                            ✓ Chave PIX copiada com sucesso para sua área de transferência!
+                        </div>
+
+                        <div class="mt-4 pt-4 border-t border-amber-200/60 text-xs text-gray-600 space-y-0.5">
+                            <p><strong>Favorecido:</strong> Lar dos Velhinhos N. S. Aparecida de Regente Feijó</p>
+                            <p><strong>Banco:</strong> Conta Institucional SSVP • CNPJ: 46.431.656/0001-60</p>
+                        </div>
+                    </div>
+
+                    <!-- Valores Sugeridos e Impacto Tangível (Benchmarking comprovado) -->
+                    <div>
+                        <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-3 text-center">
+                            Como sua doação se traduz em cuidado real:
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 flex items-start gap-3">
+                                <div class="font-extrabold text-lar-green text-lg shrink-0">R$ 30</div>
+                                <div class="text-xs text-gray-600">
+                                    Contribui para a compra de frutas frescas e itens de nutrição para o café da manhã.
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 flex items-start gap-3">
+                                <div class="font-extrabold text-lar-green text-lg shrink-0">R$ 50</div>
+                                <div class="text-xs text-gray-600">
+                                    Garante o fornecimento de fraldas geriátricas e itens diários de higiene.
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 flex items-start gap-3">
+                                <div class="font-extrabold text-lar-green text-lg shrink-0">R$ 100</div>
+                                <div class="text-xs text-gray-600">
+                                    Apoia na aquisição de medicamentos contínuos e materiais para curativos.
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 flex items-start gap-3">
+                                <div class="font-extrabold text-lar-green text-lg shrink-0">R$ 250</div>
+                                <div class="text-xs text-gray-600">
+                                    Ajuda na manutenção integral da infraestrutura e cuidados com a equipe de apoio.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comprovante ou Dúvidas -->
+                    <div class="bg-gray-100 rounded-xl p-4 text-center">
+                        <p class="text-xs text-gray-600 mb-2">
+                            Deseja enviar seu comprovante ou precisa de recibo oficial para prestação de contas?
+                        </p>
+                        <a href="https://wa.me/5518996561166?text=Ol%C3%A1,%20fiz%20uma%20doa%C3%A7%C3%A3o%20para%20o%20Lar%20dos%20Velhinhos%20e%20gostaria%20de%20enviar%20o%20comprovante."
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1.5 text-xs font-bold text-lar-green hover:underline">
+                            <svg class="w-4 h-4 text-green-700" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                            </svg>
+                            Enviar comprovante pelo WhatsApp (18) 99656-1166
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- FAQ de Doação Rápida -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold text-gray-900 text-center mb-6">Perguntas Frequentes sobre Doações</h3>
+
+                <div class="collapse collapse-plus bg-white border border-gray-200 rounded-xl">
+                    <input type="radio" name="faq-accordion" checked="checked" />
+                    <div class="collapse-title font-bold text-gray-800 text-sm sm:text-base">
+                        Para onde vai o dinheiro doado?
+                    </div>
+                    <div class="collapse-content text-xs sm:text-sm text-gray-600">
+                        <p>100% dos recursos são aplicados diretamente na manutenção do Lar dos Velhinhos Nossa Senhora
+                            Aparecida: alimentação diária dos 20 idosos, materiais de higiene, fraldas, fisioterapia,
+                            medicamentos e despesas operacionais da casa.</p>
+                    </div>
+                </div>
+
+                <div class="collapse collapse-plus bg-white border border-gray-200 rounded-xl">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-bold text-gray-800 text-sm sm:text-base">
+                        O Lar emite recibo da doação?
+                    </div>
+                    <div class="collapse-content text-xs sm:text-sm text-gray-600">
+                        <p>Sim! Ao realizar a transferência via PIX ou depósito, basta enviar o comprovante com seu nome
+                            ou razão social pelo WhatsApp (18) 99656-1166 ou e-mail aidosos@hotmail.com que a secretaria
+                            emite o recibo institucional.</p>
+                    </div>
+                </div>
+
+                <div class="collapse collapse-plus bg-white border border-gray-200 rounded-xl">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-bold text-gray-800 text-sm sm:text-base">
+                        Posso doar alimentos, roupas ou fraldas físicas?
+                    </div>
+                    <div class="collapse-content text-xs sm:text-sm text-gray-600">
+                        <p>Com certeza! Recebemos doações de materiais de segunda a sexta, das 8h às 16h, diretamente em
+                            nossa sede (Rua José Gomes, 858 – Jd. Remanso, Regente Feijó/SP).</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé Simples -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-xs">
+        <div class="max-w-xl mx-auto space-y-2">
+            <p class="font-bold text-white">Lar dos Velhinhos Nossa Senhora Aparecida • Regente Feijó (SP)</p>
+            <p>CNPJ: 46.431.656/0001-60 • Sociedade de São Vicente de Paulo</p>
+            <p class="text-gray-500">© 1971–2026. Acolhendo idosos com dignidade.</p>
+        </div>
+        <div class="pt-2 flex justify-center"><sanbernarda-badge data-source="lar-dos-velhinhos"></sanbernarda-badge></div>
+</footer>
+
+    <script>
+        function copyPixKey() {
+            const pixKey = "46.431.656/0001-60";
+            navigator.clipboard.writeText(pixKey).then(() => {
+                const feedback = document.getElementById('copy-feedback');
+                feedback.classList.remove('hidden');
+                const btn = document.getElementById('copy-btn');
+                btn.classList.add('bg-green-600', 'text-white');
+                btn.innerHTML = '✓ Copiado!';
+                setTimeout(() => {
+                    feedback.classList.add('hidden');
+                    btn.classList.remove('bg-green-600', 'text-white');
+                    btn.innerHTML = '<svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" /></svg> Copiar Chave';
+                }, 3500);
+            }).catch(err => {
+                console.error('Falha ao copiar:', err);
+            });
+        }
+    </script>
+    <!-- SanBernarda Universal Attribution Widget -->
+    <script src="https://sanbernarda.com/widgets/sanbernarda-badge.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+# logs & system
+*.log
+.DS_Store
+*.zip
+*.mp4

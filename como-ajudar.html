@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como Ajudar — Lar dos Velhinhos de Regente Feijó</title>
+    <meta name="description"
+        content="Descubra todas as maneiras de apoiar o Lar dos Velhinhos de Regente Feijó: doação PIX, doação de fraldas e alimentos, Nota Fiscal Paulista ou voluntariado." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        lar: {
+                            green: '#14532d',
+                            greenLight: '#166534',
+                            amber: '#d97706',
+                            amberDark: '#b45309',
+                            warm: '#fbfbf8',
+                            surface: '#ffffff',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fbfbf8;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: #14532d;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            z-index: 9999;
+            font-weight: 700;
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #d97706;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Header & Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-200">
+        <div class="navbar max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="navbar-start flex items-center gap-3">
+                <a href="index.html" class="flex flex-col text-left group">
+                    <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-lar-green">Lar dos
+                        Velhinhos</span>
+                    <span class="text-xs text-gray-500 font-medium -mt-1 hidden sm:block">Regente Feijó (SSVP)</span>
+                </a>
+            </div>
+
+            <nav class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-1 font-semibold text-gray-700 text-sm">
+                    <li><a href="index.html" class="hover:text-lar-green">Início</a></li>
+                    <li><a href="quem-somos.html" class="hover:text-lar-green">Quem Somos</a></li>
+                    <li><a href="como-ajudar.html" class="bg-gray-100 text-lar-green">Como Ajudar</a></li>
+                    <li><a href="transparencia.html" class="hover:text-lar-green">Transparência</a></li>
+                    <li><a href="contato.html" class="hover:text-lar-green">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-end flex items-center gap-2">
+                <a href="doar.html"
+                    class="btn btn-warning bg-amber-600 hover:bg-amber-700 text-white font-bold border-none text-sm sm:text-base">
+                    Doar via PIX
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="flex-grow py-12 px-4 sm:px-6">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Introdução da Página -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <div class="badge badge-warning bg-amber-100 text-amber-800 font-bold mb-3 border-none">Canais de Apoio
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+                    Como Ajudar o Lar dos Velhinhos
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600">
+                    Você pode apoiar nossos 20 idosos acolhidos de diversas formas: com doações em dinheiro, doando
+                    itens do dia a dia, destinando sua Nota Fiscal Paulista ou dedicando seu tempo e carinho.
+                </p>
+            </div>
+
+            <!-- 1. Seção: Doação em Dinheiro (PIX & Bancária) -->
+            <section id="financeiro" class="mb-14 bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-md">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-green-100 text-lar-green flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">1. Doação Financeira (PIX e Transferência)</h2>
+                        <p class="text-sm text-gray-500">Ajuda direta na manutenção da casa, remédios e folha dos
+                            cuidadores</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-lar-warm p-6 rounded-xl border border-gray-200">
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">Chave PIX Oficial</h3>
+                        <p class="text-xs text-gray-500 mb-3">Utilize a chave oficial no seu aplicativo bancário:</p>
+                        <div
+                            class="bg-white p-3 rounded-lg border border-gray-300 font-mono font-bold text-lar-green text-lg select-all mb-2">
+                            46.431.656/0001-60
+                        </div>
+                        <p class="text-xs text-gray-500">Tipo: CNPJ • Favorecido: Lar dos Velhinhos N. S. Aparecida</p>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <p class="text-sm text-gray-600 mb-4">
+                            Deseja fazer doações mensais programadas ou precisa de uma declaração institucional? Fale
+                            diretamente com nossa administração.
+                        </p>
+                        <a href="doar.html"
+                            class="btn btn-warning bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold border-none">
+                            Acessar Página de Doação com QR Code
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Seção: Doação de Itens de Necessidade Contínua -->
+            <section id="necessidades" class="mb-14 bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-md">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">2. Itens de Primeira Necessidade</h2>
+                        <p class="text-sm text-gray-500">Materiais consumidos diariamente pelos nossos 20 idosos</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <span class="badge badge-warning mb-2 text-xs font-bold">Urgente</span>
+                        <h4 class="font-bold text-gray-800 text-sm">Fraldas Geriátricas</h4>
+                        <p class="text-xs text-gray-600 mt-1">Tamanhos G e GG (uso contínuo dia e noite).</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <span class="badge badge-outline mb-2 text-xs font-bold">Constante</span>
+                        <h4 class="font-bold text-gray-800 text-sm">Alimentos Não Perecíveis</h4>
+                        <p class="text-xs text-gray-600 mt-1">Leite integral, café, aveia, arroz, feijão e óleo.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <span class="badge badge-outline mb-2 text-xs font-bold">Constante</span>
+                        <h4 class="font-bold text-gray-800 text-sm">Higiene Pessoal</h4>
+                        <p class="text-xs text-gray-600 mt-1">Sabonetes líquidos, hidratantes corporais e lenços
+                            umedecidos.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <span class="badge badge-outline mb-2 text-xs font-bold">Constante</span>
+                        <h4 class="font-bold text-gray-800 text-sm">Produtos de Limpeza</h4>
+                        <p class="text-xs text-gray-600 mt-1">Desinfetantes hospitalares, água sanitária e sacos de lixo
+                            reforçados.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <span class="badge badge-outline mb-2 text-xs font-bold">Periódico</span>
+                        <h4 class="font-bold text-gray-800 text-sm">Roupas de Cama e Banho</h4>
+                        <p class="text-xs text-gray-600 mt-1">Lençóis com elástico para cama de solteiro e toalhas de
+                            banho.</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <span class="badge badge-outline mb-2 text-xs font-bold">Consultar</span>
+                        <h4 class="font-bold text-gray-800 text-sm">Medicamentos e Suplementos</h4>
+                        <p class="text-xs text-gray-600 mt-1">Consulte previamente a enfermagem para verificar demandas
+                            ativas.</p>
+                    </div>
+                </div>
+
+                <p class="text-xs text-gray-500 bg-amber-50 p-4 rounded-lg border border-amber-200">
+                    <strong>Ponto de Entrega:</strong> Rua José Gomes, 858 – Jardim Remanso, Regente Feijó/SP. Segunda a
+                    sexta das 8h às 16h. Dúvidas pelo fone (18) 3279-1631.
+                </p>
+            </section>
+
+            <!-- 3. Seção: Nota Fiscal Paulista -->
+            <section id="nfp" class="mb-14 bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-md">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">3. Destine sua Nota Fiscal Paulista (Sem Custo)
+                        </h2>
+                        <p class="text-sm text-gray-500">Ajude o Lar automaticamente a cada compra realizada no Estado
+                            de São Paulo</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-sm text-gray-600">
+                    <p>
+                        Pelo programa Nota Fiscal Paulista, você pode cadastrar o Lar dos Velhinhos para receber
+                        automaticamente os créditos das suas compras em que informar o CPF:
+                    </p>
+
+                    <ol
+                        class="list-decimal list-inside space-y-3 pl-2 bg-gray-50 p-5 rounded-xl border border-gray-200">
+                        <li>Acesse o aplicativo ou portal da <strong>Nota Fiscal Paulista (Fazenda SP)</strong>.</li>
+                        <li>Faça login com seu CPF e senha.</li>
+                        <li>Acesse a aba <strong>"Doação Automática"</strong>.</li>
+                        <li>Selecione o período (anual) e busque pelo CNPJ: <strong
+                                class="font-mono text-lar-green">46.431.656/0001-60</strong>.</li>
+                        <li>Confirme o <strong>Lar dos Velhinhos Nossa Senhora Aparecida</strong>. Pronto! Cada nota com
+                            CPF agora ajuda o Lar sem que você gaste um centavo a mais.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- 4. Seção: Voluntariado -->
+            <section id="voluntariado" class="bg-white rounded-2xl p-6 sm:p-10 border border-gray-200 shadow-md">
+                <div class="flex items-center gap-4 mb-6">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">4. Seja Voluntário</h2>
+                        <p class="text-sm text-gray-500">Doe seu tempo, atenção e talentos em benefício dos idosos</p>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-600 mb-6">
+                    Música, contação de histórias, artesanato, recreação ou simplesmente uma tarde de conversa e escuta
+                    atenta. As atividades voluntárias trazem imensa alegria aos nossos residentes.
+                </p>
+
+                <div class="bg-lar-warm p-6 rounded-xl border border-gray-200 text-center">
+                    <p class="text-sm font-bold text-gray-800 mb-2">Quer participar como voluntário?</p>
+                    <p class="text-xs text-gray-600 mb-4">Entre em contato diretamente pelo nosso WhatsApp institucional
+                        para conversarmos sobre sua disponibilidade e áreas de interesse:</p>
+                    <a href="https://wa.me/5518996561166?text=Ol%C3%A1,%20gostaria%20de%20ser%20volunt%C3%A1rio%20no%20Lar%20dos%20Velhinhos."
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn-neutral bg-lar-green hover:bg-green-800 text-white font-bold">
+                        Falar sobre Voluntariado no WhatsApp
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-xs">
+        <p class="font-bold text-white mb-1">Lar dos Velhinhos Nossa Senhora Aparecida • Regente Feijó (SP)</p>
+        <p>CNPJ: 46.431.656/0001-60 • © 1971–2026. Acolhendo com dignidade.</p>
+        <div class="pt-2 flex justify-center"><sanbernarda-badge data-source="lar-dos-velhinhos"></sanbernarda-badge></div>
+</footer>
+    <!-- SanBernarda Universal Attribution Widget -->
+    <script src="https://sanbernarda.com/widgets/sanbernarda-badge.js" async defer></script>
+</body>
+
+</html>

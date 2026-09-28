@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal da Transparência — Lar dos Velhinhos de Regente Feijó</title>
+    <meta name="description"
+        content="Portal de Transparência e Prestação de Contas do Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó. Balancetes, relatórios e parcerias públicas." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        lar: {
+                            green: '#14532d',
+                            greenLight: '#166534',
+                            amber: '#d97706',
+                            amberDark: '#b45309',
+                            warm: '#fbfbf8',
+                            surface: '#ffffff',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fbfbf8;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: #14532d;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            z-index: 9999;
+            font-weight: 700;
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #d97706;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-200">
+        <div class="navbar max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="navbar-start flex items-center gap-3">
+                <a href="index.html" class="flex flex-col text-left group">
+                    <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-lar-green">Lar dos
+                        Velhinhos</span>
+                    <span class="text-xs text-gray-500 font-medium -mt-1 hidden sm:block">Regente Feijó (SSVP)</span>
+                </a>
+            </div>
+
+            <nav class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-1 font-semibold text-gray-700 text-sm">
+                    <li><a href="index.html" class="hover:text-lar-green">Início</a></li>
+                    <li><a href="quem-somos.html" class="hover:text-lar-green">Quem Somos</a></li>
+                    <li><a href="como-ajudar.html" class="hover:text-lar-green">Como Ajudar</a></li>
+                    <li><a href="transparencia.html" class="bg-gray-100 text-lar-green">Transparência</a></li>
+                    <li><a href="contato.html" class="hover:text-lar-green">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-end flex items-center gap-2">
+                <a href="doar.html"
+                    class="btn btn-warning bg-amber-600 hover:bg-amber-700 text-white font-bold border-none text-sm sm:text-base">
+                    Doar via PIX
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="flex-grow py-12 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+
+            <div class="text-center mb-12">
+                <div class="badge badge-warning bg-amber-100 text-amber-800 font-bold mb-3 border-none">Prestação de
+                    Contas</div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+                    Portal da Transparência
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                    Nosso compromisso inegociável com a clareza e a correta aplicação de cada recurso proveniente de
+                    doações da comunidade e de convênios públicos.
+                </p>
+            </div>
+
+            <!-- Dados Cadastrais Institucionais -->
+            <section class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-md mb-10">
+                <h2 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-100">
+                    Dados Oficiais da Entidade
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm text-gray-700">
+                    <div>
+                        <strong class="text-gray-900 block">Razão Social:</strong>
+                        Lar dos Velhinhos Nossa Senhora Aparecida de Regente Feijó
+                    </div>
+                    <div>
+                        <strong class="text-gray-900 block">CNPJ:</strong>
+                        46.431.656/0001-60
+                    </div>
+                    <div>
+                        <strong class="text-gray-900 block">Vinculação:</strong>
+                        Sociedade de São Vicente de Paulo (SSVP) – Conselho Central de Presidente Prudente
+                    </div>
+                    <div>
+                        <strong class="text-gray-900 block">Endereço da Sede:</strong>
+                        Rua José Gomes, 858 – Jardim Remanso, Regente Feijó/SP – CEP 19570-000
+                    </div>
+                </div>
+            </section>
+
+            <!-- Organização de Documentos e Prestação de Contas -->
+            <section class="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-md mb-10 space-y-6">
+                <h2 class="text-xl font-bold text-gray-900 pb-2 border-b border-gray-100">
+                    Documentos & Balancetes Públicos
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-600">
+                    A relação completa de documentos, planos de trabalho e balancetes contábeis anuais está disponível
+                    para consulta pública na secretaria da entidade e pode ser solicitada digitalmente.
+                </p>
+
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-900">Estatuto Social Institucional</h4>
+                            <p class="text-xs text-gray-500">Documento de constituição e regras regimentais SSVP</p>
+                        </div>
+                        <a href="contato.html" class="btn btn-sm btn-outline text-lar-green">Solicitar Cópia</a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-900">Convênios e Termos de Colaboração Municipal</h4>
+                            <p class="text-xs text-gray-500">Parcerias e repasses de fomento com o Município de Regente
+                                Feijó</p>
+                        </div>
+                        <a href="contato.html" class="btn btn-sm btn-outline text-lar-green">Solicitar Cópia</a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 rounded-xl border border-gray-200 bg-gray-50">
+                        <div>
+                            <h4 class="font-bold text-sm text-gray-900">Balancetes e Relatórios de Atividades Anuais
+                            </h4>
+                            <p class="text-xs text-gray-500">Demonstrativos contábeis de receitas, despesas e
+                                acolhimentos</p>
+                        </div>
+                        <a href="contato.html" class="btn btn-sm btn-outline text-lar-green">Solicitar Cópia</a>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-xs text-gray-700">
+                    <strong>Atendimento ao Cidadão & Doador:</strong> Qualquer dúvida sobre a destinação de recursos
+                    pode ser esclarecida pelo e-mail <code>aidosos@hotmail.com</code> ou presencialmente na sede de
+                    segunda a sexta, das 8h às 16h.
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-xs">
+        <p class="font-bold text-white mb-1">Lar dos Velhinhos Nossa Senhora Aparecida • Regente Feijó (SP)</p>
+        <p>CNPJ: 46.431.656/0001-60 • © 1971–2026. Acolhendo com dignidade.</p>
+        <div class="pt-2 flex justify-center"><sanbernarda-badge data-source="lar-dos-velhinhos"></sanbernarda-badge></div>
+</footer>
+    <!-- SanBernarda Universal Attribution Widget -->
+    <script src="https://sanbernarda.com/widgets/sanbernarda-badge.js" async defer></script>
+</body>
+
+</html>
